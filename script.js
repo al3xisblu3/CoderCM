@@ -27,7 +27,7 @@ if (yearEl) {
 // Chart.js implementation for plan page
 if (document.getElementById('courseChart')) {
     const ctx = document.getElementById('courseChart').getContext('2d');
-    new Chart(ctx, {
+    const chart = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: ['Strings & Data Types', 'Variables', 'Loops & Conditionals', 'Functions & Objects'],
